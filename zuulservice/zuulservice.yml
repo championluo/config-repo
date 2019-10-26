@@ -11,7 +11,11 @@ zuul.routes.specialroutesservice: /spec/**
 #ribbon.eureka.enabled: false
 zuul.sensitiveHeaders: Cookie,Set-Cookie
 zuul.debug.request: true
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2500
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 7000
+
+hystrix.command.organizationservice.execution.isolation.thread.timeoutInMilliseconds: 7000
+organizationservice.ribbon.ReadTimeout: 7000
+
 #hystrix.command.licensingservice.execution.isolation.thread.timeoutInMilliseconds: 2
 #licensingservice.ribbon.ReadTimeout: 2
 signing.key: "345345fsdfsf5345"
